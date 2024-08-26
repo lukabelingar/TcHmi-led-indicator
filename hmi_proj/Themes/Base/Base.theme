@@ -1,0 +1,42 @@
+{
+  "controlTypeValues": {},
+  "controlClassValues": {
+    "alarm": {
+      "attributes": {
+        "FillColor": {
+          "color": "rgba(204, 23, 23, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "disabled": {
+      "attributes": {
+        "FillColor": {
+          "color": "rgba(153, 153, 153, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "LED": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "on": {
+      "attributes": {
+        "FillColor": {
+          "color": "rgba(163, 255, 0, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "warning": {
+      "attributes": {
+        "FillColor": {
+          "color": "rgba(255, 112, 0, 1)"
+        }
+      },
+      "themedResources": {}
+    }
+  },
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/ThemeDescription.Schema.json"
+}

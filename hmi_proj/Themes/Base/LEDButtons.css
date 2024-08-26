@@ -1,0 +1,43 @@
+/* This is a custom button design, using css wizardry of outer and inner box shadows and background color.
+    The style is enabled, when the LED style is added to the button under Properties->Common->ClassNames
+*/
+
+/* enabled, normal */
+.tchmi-class-LED {
+    border: none;
+    border-radius: 50%;
+    background-image: none !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px !important;
+    background-color: #89FF00;
+}
+
+    /* Class down will be set/unset in the control on mouse/touch down */
+    /* enabled, active */
+    .tchmi-class-LED.down {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #470c01 0 -1px 9px, #ff1e00 0 2px 12px !important;
+        background-color: #ff1a00;
+    }
+
+    /* This hides the semi-transparent white overflow element of the disabled element */
+    .tchmi-class-LED::after {
+        display:none;
+    }
+
+    /*
+    Following line are class names of a disabled element. It's possible one of them (the less-fancy tchmi-control-disabled, presumably) will be removed in newer versions.
+    TcHmi_Controls_System_TcHmiControl-disabled tchmi-control-disabled
+    */
+
+    /* Class tchmi-control-disabled is set when isEnabled is set to false - ideal for styling a non-pressable LED indicator */
+    /* disabled, normal */
+    .tchmi-class-LED.tchmi-control-disabled {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #403a39 0 -1px 9px, #cfc3c2 0 2px 12px !important;
+        background-color: #cfc3c2;
+    }
+
+    /* Class down is added for active state */
+    /* disabled, active */
+    .tchmi-class-LED.down.tchmi-control-disabled {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #470c01 0 -1px 9px, #ff9d00 0 2px 12px !important;
+        background-color: #ff9d00;
+    }
