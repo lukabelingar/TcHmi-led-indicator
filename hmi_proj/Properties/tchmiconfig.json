@@ -25,7 +25,7 @@
           "type": "Stylesheet"
         },
         {
-          "name": "Themes/Base/LEDButtons.css",
+          "name": "Themes/Base/LED.css",
           "description": "",
           "type": "Stylesheet"
         }
