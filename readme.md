@@ -1,6 +1,6 @@
 # Different approaches for a simple or multi-state indicators / buttons for TcHmi
 
-Two demonstrations of a simple "indicator" element, using user control and a css-styled TcHmi button.
+Two demonstrations of a simple "led indicator" element, using user control and a css-styled TcHmi button.
 
 ## Functionality
 
